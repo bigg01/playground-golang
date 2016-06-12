@@ -1,0 +1,23 @@
+# go env
+GOARCH="amd64"
+GOBIN=""
+GOEXE=""
+GOHOSTARCH="amd64"
+GOHOSTOS="darwin"
+GOOS="darwin"
+GOPATH="/Users/guo/work/"
+GORACE=""
+GOROOT="/usr/local/go"
+GOTOOLDIR="/usr/local/go/pkg/tool/darwin_amd64"
+GO15VENDOREXPERIMENT="1"
+CC="clang"
+GOGCCFLAGS="-fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fno-common"
+CXX="clang++"
+CGO_ENABLED="1"
+guo@optimus-pro15:~/Library/Application Support/Sublime Text 2 # vi ./Packages/User/golangBIGG01.sublime-build
+guo@optimus-pro15:~/Library/Application Support/Sublime Text 2 # cat ./Packages/User/golangBIGG01.sublime-build
+{
+    "env": {"GOPATH": "$HOME/gowork", "PATH": "$GOPATH/bin:$PATH", "GOROOT":"/usr/local/go"} ,
+    "cmd": "/usr/local/go/bin/go run $file",
+    "shell" : true
+}
